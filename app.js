@@ -11,7 +11,7 @@ var querystring = require('querystring');
 var app = express()
 
 // var nginx = path.join(__dirname, 'temp')
-var nginx = '/opt/data/nginx/html/future-driver/clp/'
+var nginx = '/opt/data/nginx/html/future-driver/clp/' ; //文件存放地址
 
 app.get('/', function (req, res) {
     res.send('WebShot!');
