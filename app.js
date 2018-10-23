@@ -8,10 +8,11 @@ var URL = require('url')
 var fs = require('fs')
 var crypto = require('crypto')
 var querystring = require('querystring');
+var config = require('./config.json')
 var app = express()
 
 // var nginx = path.join(__dirname, 'temp')
-var nginx = '/opt/data/nginx/html/future-driver/clp/' ; //文件存放地址
+var nginx = config.filePath ; //文件存放地址
 
 app.get('/', function (req, res) {
     res.send('WebShot!');
@@ -71,7 +72,7 @@ app.get('/shot', function (req, res) {
     });
 });
 
-var server = app.listen(9999, function () {
+var server = app.listen(config.port, function () {
     var host = server.address().address;
     var port = server.address().port;
 
