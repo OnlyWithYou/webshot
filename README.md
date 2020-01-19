@@ -1,15 +1,16 @@
-# webshot(基于 express)
+# webshot(基于 express)
+服务端 html to img 的解决方案
 
 ## 背景
 未来车老板App上， 在微信分享的时候，需要动态生成图片
 
-## 功能
+## 功能
 
-1. 通过一个 URL ，生成一个图片
+1. 通过一个 URL ，生成一个图片
 
 ## 部署
 
-1. 将项目部署于主机上，
+1. 将项目部署于主机上，
 2. `$ npm install` 
 3. `$ node app.js`
 
